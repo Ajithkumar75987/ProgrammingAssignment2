@@ -1,4 +1,4 @@
-#Trials
+# makeCacheMatrix for a new function. It contains a matrix
 makeCacheMatrix <- function(m = matrix()) {
   i <- NULL
   set <- function(matrix) {
@@ -13,6 +13,8 @@ makeCacheMatrix <- function(m = matrix()) {
        getInverse = getInverse)
 }
 
+
+# cacheSolve function is used to check our inverce function of our matrix 
 cacheSolve <- function(x, ...) {
   m <- x$getInverse()
   if( !is.null(m) ) {
@@ -24,3 +26,5 @@ cacheSolve <- function(x, ...) {
   x$setInverse(m)
   m
 }
+
+
